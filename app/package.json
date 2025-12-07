@@ -14,23 +14,30 @@
     "generate": "prisma generate",
     "lint": "eslint ./src/**",
     "lint:fix": "eslint ./src/** --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jest.config.ts",
+    "test:e2e": "jest --config jest.e2e.config.ts --coverage"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.1",
     "@types/bcryptjs": "^2.4.6",
     "@types/express": "^5.0.5",
+    "@types/jest": "^30.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.10.1",
+    "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^8.48.1",
     "@typescript-eslint/parser": "^8.48.1",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.4",
+    "jest": "^30.2.0",
     "nodemon": "^3.1.11",
     "prettier": "^3.7.3",
     "prisma": "^7.1.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
@@ -43,6 +50,7 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "inversify": "^7.10.4",
+    "jsonwebtoken": "^9.0.3",
     "reflect-metadata": "^0.2.2",
     "tslog": "^4.10.2"
   }
